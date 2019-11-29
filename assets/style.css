@@ -1,0 +1,704 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Raleway', sans-serif;
+	background: #fff9f0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+	outline:none
+}
+
+input, textarea{
+	box-sizing: border-box;
+}
+/***************************************/
+/***************END OF RESET************/
+/***************************************/
+
+/* HOME PAGE */
+
+.container {
+	padding-bottom: 30px;
+}
+
+.bottom {
+	position: relative;
+}
+
+.video {
+    filter: opacity(60%);
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.mygenre {
+	padding: 20px;
+	border: 1px solid #414344;
+	text-align: center;
+	margin: 20px 0;
+	text-transform: uppercase;
+	color: #fff;
+	background: #414344;
+	font-weight: bold;
+	transition: all .3s;
+	border-radius: 15px;
+}
+
+.mygenre:hover {
+	border-radius: 0;
+	color: #414344;
+	background: #fff;
+}
+
+.list-gender a {
+	text-decoration: none;
+
+}
+
+.home-title {
+	text-align: center;
+	font-size: 1.7rem;
+	margin: 30px 0;
+	text-transform: uppercase;
+}
+
+.btn-retour {
+	text-transform: uppercase;
+	padding: 10px 0;
+	font-weight: bold;
+	color: inherit;
+	text-decoration: none;
+	transition: all .3s;
+	font-size: 1.3rem;
+}
+
+.btn-retour img {
+	width: 100px;
+	height: auto;
+	transition: all .5s;
+	transform: rotate(250deg);
+}
+.btn-retour p {
+	text-align: center;
+}
+
+.btn-retour:hover {
+	text-decoration: none;
+	color: #CC473C;
+}
+
+.retour {
+	margin-top: 40px;
+	width: 100px;
+}
+
+.btn-retour img:hover {
+	transform: rotate(0);
+}
+
+.img-background {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.background-top {
+	position: absolute;
+	top: 106px;
+}
+.background-bottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.background-bottom-actors {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+
+/* NAVBAR */
+
+.navbar .navbar-toggler-icon {
+    background-image: url("../assets/img/burger.svg");
+}
+
+nav .nav-item {
+	text-transform: uppercase;
+	margin-left: 30px;
+	font-size: 1.2rem;
+	color: #fff;
+	font-weight: bold;
+}
+
+nav .nav-item:hover {
+	color: #CC473C;
+}
+
+nav {
+	background-color: #414344;
+}
+
+.quote-1 {
+	transform: rotate(180deg);
+	margin-bottom: 10px;
+}
+
+.quote-2 {
+	margin-bottom: 10px;
+}
+
+.navbar-brand img {
+	width: 80px;
+}
+
+.navbar-nav {
+	margin: 0 auto;
+}
+
+.logo-home {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	margin-top: 30px;
+
+}
+
+.logo-home .logo-h {
+	width: 350px;
+	margin-bottom: 15px;
+}
+
+.quote {
+	/* position: absolute; */
+	font-size: 1.9rem;
+
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+/* ALL MOVIES */
+
+.movie-card {
+	position: relative;
+	z-index: 98;
+	padding: 10px 0;
+	margin-top: 80px;
+	border: 1px solid #ddd;
+	text-align: center;
+	box-shadow: 1px 1px 10px #ddd;
+	border-radius: 3px;
+	min-height: 500px;
+	max-height: 500px;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+}
+
+.movie-title {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin: 20px 0;
+	font-weight: bold;
+}
+
+.movie-card img {
+	min-height: 300px;
+	max-height: 300px;
+	margin: 0 auto 20px auto;
+}
+
+.title-movies {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.movie-link {
+	margin-top: 20px;
+}
+
+.movie-link a {
+	text-decoration: none;
+	background: #414344;
+	color: #fff;
+	border: 2px solid #414344;
+	font-weight: bold;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	padding: 10px;
+	border-radius: 5px;
+	transition: all .3s;
+}
+
+.movie-link a:hover {
+	color: #414344;
+	background: #fff;
+	text-decoration: none;
+}
+
+/* ALL ACTORS */
+
+.actor-card {
+	position: relative;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #ddd;
+	padding: 20px;
+	box-shadow: 1px 1px 10px #ddd;
+	border-radius: 3px;
+	min-height: 80px;
+	margin-top: 50px;
+	background: #fff;
+	transition: all .3s;
+}
+
+.actor-card:hover {
+	border: 1px solid #CC473C;
+}
+
+.actor-title {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+.actor-link a {
+	text-transform: uppercase;
+	background-color: #414344;
+	border-radius: 100%;
+	color: #fff;
+	padding: 20px 12px;
+	transition: all .5s;
+}
+
+.actor-link a:hover {
+	color: #fff;
+	border-radius: 0;
+	text-decoration: none;
+}
+
+.img-title {
+	width: 250px;
+}
+
+
+.title-actors {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+.titre-acteurs {
+	text-align: center;
+    width: 450px;
+	margin: 50px auto;
+	border: 2px solid #CC473C;
+	border-radius: 5px;
+	padding: 20px 0;
+
+}
+
+.the-title {
+	padding: 5px;
+
+}
+
+/* FICHE FILM */
+
+.film-title {
+	text-align: center;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.content {
+	line-height: 1.2;
+}
+
+.content p {
+	margin-bottom: 5px;
+	font-size: 1.2rem;
+}
+
+.onefilm {
+	margin-top: 50px;
+}
+
+.onefilm img {
+	width: 300px;
+}
+
+.fiche-film {
+	margin: 50px 0;
+}
+
+.content-actor, .content-real {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+.actor-name, .real-name {
+	text-transform: uppercase;
+}
+
+.title-actor {
+	margin-top: 70px;
+	font-size: 1.5rem;
+}
+
+.divider {
+	margin: 15px auto;
+	height: 2px;
+	width: 70px;
+	background-color: #333;
+}
+
+.title-actor h3 {
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.carte-header{
+	text-align: center;
+	border: 2px solid black;
+	background-color: #414344;
+	padding: 20px;
+}
+
+.carte-body{
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #414344;
+	padding: 10px;
+	color: white;
+	font-size: 14px;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+}
+.carte-header img {
+	width: 150px;
+	border: 3px solid #ddd;
+	border-radius: 3px;
+}
+
+.carte-footer{
+	text-align: center;
+	border: 2px solid black;
+	background-color: #414344;
+	padding: 10px;
+}
+
+#carte-lien{
+	text-decoration: none;
+	color: #CC473C;
+}
+
+.btnn-fiche{
+	width: 30px;
+	transition: all ease 500ms;
+	color: #CC473C;
+	padding-bottom: 5px;
+}
+
+.btnn-fiche:hover{
+	text-decoration: none;
+	transform: scale(1.5);
+}
+
+/* FICHE ACTEUR */
+
+.movie-divider {
+	height: 2px;
+	width: 70px;
+	background-color: #333;
+	margin: 7px auto 15px auto;
+}
+
+.title-movie {
+	margin-bottom: 30px;
+}
+
+.title-movie h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.list-movie {
+	text-transform: uppercase;
+
+}
+
+.fiche-acteur {
+	margin: 50px 0;
+}
+
+.acteur-title {
+	text-align: center;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.one-actor .img-thumbnail {
+	width: 250px;
+}
+
+.actor-content {
+	font-size: 1.4rem;
+	line-height: 1.3;
+	margin-top: 20px;
+}
+
+.card-movie {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px #ddd;
+	background: #fff;
+	margin-bottom: 30px;
+}
+
+.card-movie .btn-fiche {
+	width: 60px;
+	transition: all ease 500ms;
+	margin-bottom: 10px;
+}
+.card-movie .btn-fiche:hover {
+	transform: scale(1.5);
+}
+
+.link-film {
+	margin-top: 30px;
+}
+
+.card-movie .img-movie {
+	width: auto;
+	height: 250px;
+}
+
+.movie-body p:first-child {
+	font-weight: bold;
+}
+
+.movie-body {
+	font-size: 1.4rem;
+	margin: 0 auto;
+}
+
+.movie-body a {
+	text-decoration: none;
+	color: rgb(151, 45, 45);
+	text-transform: uppercase;
+}
+
+.one-actor {
+	text-align: center;
+}
+
+
+
+/*formulaire*/
+
+.title-form {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	color: green;
+}
+
+.title-form2 {
+	text-align: center;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+.formulaire
+{
+	
+	max-width: 700px;
+	margin:auto;
+	padding: 25px;
+    background-color: lightgray;
+    border-color: gray;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    opacity: 0.8;
+}
+	
+
+
+.btn-valider {
+	text-transform: uppercase;
+	border: 1px solid #CC473C;
+	margin-top: 15px;
+	padding: 10px 15px;
+	background-color: #CC473C;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 3px;
+	text-decoration: none;
+	transition: all .3s;
+}
+
+
+
+.btn-valider:hover {
+	color: rgb(151, 45, 45);
+	text-decoration: none;
+	background-color: #fff;
+}
+
+#footer{
+	background: #998B7D;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	/* margin-top: 50px; */
+}
+#footer-div{
+	color: #fff9f0;
+	text-align: center;
+	font-size: 1.5rem;
+	bottom: 0;
+	padding-top: 20px;
+}
+#footer-div2{
+	padding-top: 10px;
+	color: #fff9f0;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.card-form {
+    padding: 10px 0;
+    margin-top: 80px;
+    text-align: center;
+    border-radius: 3px;
+    min-height: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-form img {
+	width: 300px;
+}
+
+.last-title {
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+@media (max-width: 576px) { 
+
+	.logo-home .logo-h {
+		width: 250px;
+	}
+
+	.logo-home .quote {
+		font-size: 1.4rem;
+	}
+
+	.navbar-nav {
+		text-align: center;
+	}
+
+	.content-actor {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.onefilm {
+		text-align: center;
+	}
+	
+ }
+
+@media (max-width: 768px) { 
+	
+ }
+
+@media (max-width: 992px) { 
+	.img-background {
+		display: none;
+	}
+	
+	.background-top {
+		display: none;
+	}
+	.background-bottom {
+		display: none;
+	}
+	.background-bottom-actors {
+		display: none;
+	}
+ }
+
+@media (max-width: 1200px) { 
+	
+ }
